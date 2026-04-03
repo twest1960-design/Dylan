@@ -21,6 +21,7 @@ git commit -m "Workspace backup: $TIMESTAMP"
 
 # Push to GitHub
 echo "Pushing to GitHub..."
+git pull --rebase origin master
 git push origin master
 
 echo "=== Backup complete ==="
