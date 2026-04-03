@@ -2,6 +2,9 @@
 # Backup workspace files to GitHub
 # Run: chmod +x backup-to-github.sh && ./backup-to-github.sh
 
+LOGFILE="/var/log/workspace-backup.log"
+exec >> "$LOGFILE" 2>&1
+
 cd /root/.openclaw/workspace
 
 echo "=== Backing up workspace to GitHub ==="
